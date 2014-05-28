@@ -1,28 +1,35 @@
-# Простой сервер для фронтенда
+Simple static server for frontend
+=================================
 
-
-## Запуск сервера
+Run server
+----------
 
 `$ frontserv`
 
-### Директория файлов
+### Server root dir
 
-`$ frontserv --dir /home/user/www-data`
+`$ frontserv --dir /home/user/www-data` or `$ frontserv -d /home/user/www-data`
 
-По-умолчанию сервер использует текущую директорию.
+Default: current dir
 
-### Порт сервера
+### Server host
 
-`$ frontserv --port 8080`
+`$ frontserv --host 192.168.1.34` or `$ frontserv -H 192.168.1.34`
 
-По-умолчанию сервер запускается на порту 8000.
+Default: localhost
 
-### Хост сервера
+### Server port
 
-`$ frontserv --host 192.168.1.34`
+`$ frontserv --port 8080` or `$ frontserv -p 8080`
 
-По-умолчанию сервер использует хост localhost.
+Default: 8000
 
-## Вызов справки
+Version
+-------
 
-`$ frontserv -h`
+`$ frontserv --version` or `$ frontserv -v`
+
+Help
+----
+
+`$ frontserv --help` or `$ frontserv -h`
