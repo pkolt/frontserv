@@ -66,7 +66,7 @@ module.exports = (function() {
         var path = this._dir + '/index.html';
 
         if (req.url !== '/') {
-            path = this._dir + req.url;
+            path = this._dir + decodeURI(req.url);
         }
 
         fs.stat(path, function(err, stats){
