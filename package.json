@@ -1,34 +1,43 @@
 {
   "name": "frontserv",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Simple static server for frontend",
-  "main": "./frontserv.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-
-  "bin": {
-    "frontserv": "./run.js"
-  },
-
-  "author": {
-    "name": "Pavel Koltyshev",
+  "keywords": [
+    "http",
+    "web",
+    "server"
+  ],
+  "bugs": {
+    "url": "https://github.com/pkolt/frontserv/issues",
     "email": "pkoltyshev@gmail.com"
   },
-
-  "repository" : {
-      "type" : "git",
-      "url" : "http://github.com/pkolt/frontserv.git"
-  },
-
   "license": "MIT",
-  "engines": {
-    "node": "~0.6.19"
+  "author": "Pavel Koltyshev <pkoltyshev@gmail.com>",
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "index.js",
+    "bin"
+  ],
+  "main": "./index.js",
+  "bin": {
+    "frontserv": "./bin/frontserv.js"
   },
-
+  "repository": "pkolt/frontserv",
+  "scripts": {
+    "test": "env JASMINE_CONFIG_PATH='./test/jasmine.json' ./node_modules/.bin/jasmine"
+  },
   "dependencies": {
-    "mime": "~1.2.11",
-    "colors": "~0.6.2",
-    "optimist": "~0.6.0"
+    "colors": ">= 0.6.0",
+    "commander": ">= 2.0.0",
+    "mime": ">= 1.0.0"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "jasmine": ">= 2.0.0",
+    "jasmine-core": ">= 2.0.0",
+    "request": ">= 2.0.0"
   }
 }

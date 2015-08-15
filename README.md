@@ -1,35 +1,74 @@
-Simple static server for frontend
-=================================
+# frontserv
 
-Run server
-----------
+  Simple static http-server for frontend.
 
-`$ frontserv`
+## Installation
 
-### Server root dir
+```bash
+$ npm install frontserv -g
+```
 
-`$ frontserv --dir /home/user/www-data` or `$ frontserv -d /home/user/www-data`
+## Quick Start
 
-Default: current dir
+```bash
+$ frontserv
+```
 
-### Server host
+## Usage
 
-`$ frontserv --host 192.168.1.34` or `$ frontserv -H 192.168.1.34`
+### Root dir (--dir, -d)
 
-Default: localhost
+```bash
+$ frontserv --dir /home/user/www-data
+```
 
-### Server port
+  Default: current dir
 
-`$ frontserv --port 8080` or `$ frontserv -p 8080`
+### Host (--host, -H)
 
-Default: 8000
+```bash
+$ frontserv --host 192.168.1.34
+```
 
-Version
--------
+  Default: localhost
 
-`$ frontserv --version` or `$ frontserv -v`
+### Port (--port, -p)
 
-Help
-----
+```bash
+$ frontserv --port 8080
+```
 
-`$ frontserv --help` or `$ frontserv -h`
+  Default: 8000
+
+### Autoindex (--autoindex)
+
+  Show list of files in the directory.
+
+```bash
+$ frontserv --autoindex
+```
+
+### Version (--version, -v)
+
+```bash
+$ frontserv --version
+```
+
+### Help (--help, -h)
+
+```bash
+$ frontserv --help
+```
+
+## Tests
+
+  To run the test suite, first install the dependencies, then run `npm test`:
+
+```bash
+$ npm install
+$ npm test
+```
+
+## License
+
+  [MIT](LICENSE.md)
