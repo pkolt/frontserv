@@ -1,4 +1,4 @@
-# frontserv
+# frontserv [![Build Status](https://travis-ci.org/pkolt/frontserv.svg)](https://travis-ci.org/pkolt/frontserv)
 
   Simple static http-server for frontend.
 
