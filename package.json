@@ -1,11 +1,13 @@
 {
   "name": "frontserv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple static server for frontend",
   "keywords": [
+    "static",
+    "server",
     "http",
-    "web",
-    "server"
+    "local"
+
   ],
   "bugs": {
     "url": "https://github.com/pkolt/frontserv/issues",
